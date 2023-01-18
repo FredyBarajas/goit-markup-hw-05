@@ -129,6 +129,9 @@ img {
 
 .nav-link {
   color: black;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover,
 .link:focus,
@@ -151,6 +154,9 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .principal-button:hover,
@@ -208,6 +214,9 @@ img {
   color: white;
   font-style: normal;
   margin-bottom: 9px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-footer:hover,
@@ -243,6 +252,9 @@ img {
   cursor: pointer;
   padding: 6px 18px 6px 18px;
   margin-left: 8px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons-portfolio:hover,
@@ -319,6 +331,9 @@ img {
   margin-right: 27px;
   margin-top: 30px;
   border: 1px solid var(--tertiary-color);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards-portfolio:nth-child(3n) {
@@ -358,6 +373,9 @@ img {
   fill: var(--principal-text-color);
   display: flex;
   align-items: center;
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icons:hover,
@@ -386,6 +404,9 @@ img {
   justify-content: center;
   margin-top: 16px;
   margin-right: 10px;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .circle-teams:hover,
@@ -437,6 +458,9 @@ img {
   padding-top: 21px;
   padding-bottom: 13px;
   border-radius: 4px;
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-box:hover,
@@ -462,6 +486,9 @@ img {
   margin-top: 20px;
   margin-right: 10px;
   background-color: #ffffff10;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .circle-footer:hover,
