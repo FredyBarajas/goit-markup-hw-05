@@ -76,13 +76,13 @@ img {
   flex-direction: column;
   margin-left: 93px;
   margin-right: 300px;
+  margin-top: 10px;
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 32px;
 }
 
 .horizontal-ul {
@@ -106,7 +106,6 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19em;
   letter-spacing: 0.03em;
   color: var(--color-selected);
   text-decoration: none;
@@ -142,7 +141,15 @@ img {
 .active {
   color: var(--color-selected);
 }
-
+.active::after {
+  content: '';
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-selected);
+  display: block;
+  border-radius: 50px;
+  margin-top: 32px;
+}
 .principal-button {
   display: flex;
   font-family: inherit;
@@ -389,6 +396,7 @@ img {
   fill: var(--principal-text-color);
   display: flex;
   align-items: center;
+  margin-top: 7px;
   transition-property: fill, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
