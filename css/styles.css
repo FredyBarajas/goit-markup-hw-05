@@ -423,6 +423,55 @@ img {
   padding: 30px;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes open-modal {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.modal {
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  width: 581px;
+  height: 528px;
+  animation-duration: 1500ms;
+  animation-name: open-modal;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close {
+  border-radius: 50%;
+  border: var(--color-icons) solid 1px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  position: absolute;
+  justify-content: center;
+  right: 8px;
+  top: 8px;
+}
+
 .header-icons {
   fill: var(--principal-text-color);
   display: flex;
