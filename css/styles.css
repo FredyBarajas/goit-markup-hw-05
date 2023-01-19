@@ -6,6 +6,7 @@
   --go-service: #188ce8;
   --principal-text-color: #757575;
   --color-icons: #afb1b8;
+  --color-text-footer: rgba(255, 255, 255, 0.6);
 }
 
 *,
@@ -203,7 +204,6 @@ img {
 .card-studio {
   margin-right: 30px;
   width: 370px;
-
   position: relative;
 }
 
@@ -235,7 +235,7 @@ img {
   font-weight: 400;
   text-decoration: none;
   line-height: 2em;
-  color: white;
+  color: var(--color-text-footer);
   font-style: normal;
   margin-bottom: 9px;
   transition-property: color;
